@@ -62,7 +62,7 @@ base_cfem1 <- base_cfem %>%
 
 
 #################################################################################
-#  Analisa dos NAS da união das bases
+#  Analise dos NAS da união das bases: CFEM e municípios
 #################################################################################
 
 # Número de linhas
