@@ -14,7 +14,7 @@ library(maps)
 
 # Limpeza do ambiente environment
 # Escolha do diretorio
-setwd("C:/Users/luizg/OneDrive/Documentos/IPEA/DADOS/BASE_FINBRA_INVESTIMENTO_CFEM")
+setwd(" ")
 options(scipen = 999)
 # Dados
 base <- read.csv2("CFEM_Distribuicao.csv")
