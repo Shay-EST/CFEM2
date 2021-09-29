@@ -73,7 +73,7 @@ base_invest1 <- base_invest %>% select(Cod.IBGE, Ano,SiglaEstado, NomeEnte, Saud
 
 
 #################################################################################
-#  AnalisE dos NAS da união das bases: municípios e investimentos
+#  Analise dos NAS da união das bases: municípios e investimentos
 #################################################################################
 
 # Verifica se existe alguma variável que contém linha NA e contalibiza o percentual.
