@@ -4,32 +4,27 @@
 # Adicionando os códigos dos municípios ao banco de dados CFEM
 ################################################################################
 
-# Bibliotecas utilizadas
 # Bibliotecas utilizadas 
 library(sf)
 library(geobr)
 library(ggplot2)
 library(dplyr)
 library(maps)
+list_geobr() #IPEA
+options(scipen = 999)
 
-# Limpeza do ambiente environment
+################################################################################
 # Escolha do diretorio
 setwd(" ")
-options(scipen = 999)
+
+################################################################################
 # Dados
-base <- read.csv2("CFEM_Distribuicao.csv")
+base       <- read.csv2("CFEM_Distribuicao.csv")
+municipios <- read_municipality(year=2020)
 
 # Filtrando apenas as linhas que representam municípios 
 cfem_d <- base %>% filter(Ente=="Município") 
 nrow(base) - nrow(cfem_d)
-
-########################################################################
-
-list_geobr() #IPEA
-
-# Carregados os municípios do estado do Pará no ano de 2020, atualizada.
-municipios <- read_municipality(year=2020)
-head(municipios)
 
 
 ##########################################################
