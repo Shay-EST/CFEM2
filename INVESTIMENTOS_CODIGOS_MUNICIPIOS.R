@@ -11,18 +11,18 @@ library(ggplot2)
 library(dplyr)
 library(maps)
 list_geobr() #IPEA
+options(scipen = 999)
 
 ################################################################################
 
 # Diretório
 setwd(" ")
-options(scipen = 999)
 
 ################################################################################
 # Dados
-saude    <- read.csv2("dados_saude.csv")
-publico  <- read.csv2("dados_publico.csv")
-educacao <- read.csv2("dados_educacao.csv")
+saude      <- read.csv2("dados_saude.csv")
+publico    <- read.csv2("dados_publico.csv")
+educacao   <- read.csv2("dados_educacao.csv")
 municipios <- read_municipality(year=2020)
 
 
